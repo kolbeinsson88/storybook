@@ -1,0 +1,1 @@
+export const BUTTON_PROPS = 'BUTTON_PROPS';
