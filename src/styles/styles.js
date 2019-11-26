@@ -7,11 +7,6 @@ const Body = css`
     font-size: 16px;
     font-weight: 400;
 
-    h1, h2, h3, h4, h5, h6 {
-      display: flex;
-      justify-content: center;
-    }
-
     .typography-container {
       display: flex;
       flex-direction: column;
@@ -43,16 +38,15 @@ const Body = css`
     sub {
       margin-right: 8px;
     }
-
   }
 `;
 
 
 const Headers = css`
-  header {
-    margin: 0;
-    padding: 0;
-  }
+    h1, h2, h3, h4, h5, h6 {
+      display: flex;
+      justify-content: center;
+    }
 `;
 
 const Footer = css``;

@@ -4,14 +4,17 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, object } from '@storybook/addon-knobs';
 
 import { Button } from '../components/index';
+import Header from '../components/blocks/typography/header';
+
 
 storiesOf('Buttons', module)
     .addDecorator(withKnobs)
     .addDecorator(story => {
         return (
-        <div style={{display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-            {story()}
-        </div>
+            <div style={{display: "flex", flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                <Header margin={16} >Buttons</Header>
+                {story()}
+            </div>
         );
     })
     .add('Button success', () => {
