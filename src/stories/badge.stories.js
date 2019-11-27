@@ -2,10 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import styled from 'styled-components';
+
 import Header from '../components/blocks/typography/header';
-
 import Badge from '../components/blocks/badge/badge';
-
 
 const ButtonWrapper = styled.div`
     display: flex;
@@ -16,7 +15,6 @@ const ButtonWrapper = styled.div`
     padding: 32px;
     margin: 8px 32px;
 `;
-
 
 storiesOf('Badge', module)
     .addDecorator(withKnobs)
