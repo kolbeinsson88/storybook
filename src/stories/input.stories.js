@@ -23,8 +23,8 @@ storiesOf('Input', module)
     .add('Input', () => {
         return (
             <InputWrapper>
-                <Header.h1>Your input</Header.h1>
-                <Input placeholder={object('placeholder', 'Type...')} />;
+                <Header.h1>Input</Header.h1>
+                <Input placeholder={object('placeholder', 'No typos....')} />;
             </InputWrapper>
         )
     });

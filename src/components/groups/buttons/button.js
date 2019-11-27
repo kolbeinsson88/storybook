@@ -7,13 +7,13 @@ import { COLOR } from '../../../styles/colors';
 
 const Disabled = css`
       &:disabled {
-        background-color: ${COLOR.GRAY_LIGHT};
+        background-color: #f1f1f1;
         color: black;
-        border: 1px solid black;;
+        border: none;
         cursor: not-allowed;
+        padding: 11px;
     }
 `;
-
 
 const StyledButton = styled.button`
     display: inline;
