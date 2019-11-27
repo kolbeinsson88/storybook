@@ -1,12 +1,15 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
-import List from '../components/groups/list/list';
+import {TitleWrapper, ItemsWrapper} from '../components/groups/list/list';
 
-it("List should accept list items", () => {
+it("List should contain h3 text element", () => {
+    const reactTestRender = TestRenderer.create(<TitleWrapper>title</TitleWrapper>).root;
+    expect(reactTestRender.props.children).toEqual("title");
+});
 
-    const reactTestRender = TestRenderer.create(<List />);
-    const instance = reactTestRender.root;
 
-    expect(instance.findAllByType);
+it("List contains and renders a div", () => {
+    const reactTestRender = TestRenderer.create(<ItemsWrapper>title</ItemsWrapper>).root;
+    expect(reactTestRender.props.children).toEqual("title");    
 });
