@@ -1,11 +1,11 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, object } from '@storybook/addon-knobs';
 
 import { Button } from '../components/index';
 import Header from '../components/blocks/typography/header';
+
 
 storiesOf('Buttons', module)
     .addDecorator(withKnobs)
@@ -18,12 +18,12 @@ storiesOf('Buttons', module)
         );
     }).add('Button', () => {
         return (
-            <siv>
+            <div>
                 <Button onClick={action('button-click')} type="danger">Success Button</Button>
                 <Button onClick={action('button-click')} type="success">Danger Button</Button>
                 <Button onClick={action('button-click')} type="info">Info Button</Button>
                 <Button onClick={action('button-click')} type="main">Main</Button>
-            </siv>
+            </div>
         );
     })
     .add('Disabled', () => {

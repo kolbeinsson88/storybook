@@ -17,7 +17,7 @@ const Body = css`
       margin: 0 64px;
       padding: 34px 0;
     }
-
+    
     .row {
       display: flex;
       flex-direction: row;

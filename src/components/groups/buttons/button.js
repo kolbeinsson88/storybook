@@ -45,11 +45,12 @@ const StyledButton = styled.button`
 `;
 
 const StyledMain = styled.button`
-    padding: 7px 32px;
+    padding: 7px 40px;
     border-radius: 18px;
     border: none;
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
 
     font-family: 'BenchNine', sans-serif;
     cursor: pointer;
@@ -73,8 +74,7 @@ const StyledMain = styled.button`
 
 const Button = ({type, children, disabled, margin, onClick}) => {
     const typeToLower = type.toLowerCase();
-    if (typeToLower === 'main')
-    {
+    if (typeToLower === 'main') {
         return (
             <StyledMain 
                 disabled={disabled}
