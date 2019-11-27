@@ -3,17 +3,50 @@ import { createGlobalStyle, css } from 'styled-components';
 
 const Body = css`
   body {
+    font-family: 'Abel', sans-serif;
     font-size: 16px;
     font-weight: 400;
+
+    .typography-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: 1px solid black;
+      margin: 0 64px;
+      padding: 34px 0;
+    }
+    
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    sub {
+      margin-right: 8px;
+    }
   }
 `;
 
 
 const Headers = css`
-  header {
-    margin: 0;
-    padding: 0;
-  }
+    h1, h2, h3, h4, h5, h6 {
+      display: flex;
+      justify-content: center;
+    }
 `;
 
 const Footer = css``;
