@@ -3,5 +3,6 @@ import Text from './text.stories';
 import Button from './button.stories';
 import Inputs from './input.stories';
 import List from './list.stories';
+import Item from './alert.stories';
 
-export default { Background, Text, Button, Inputs, List };
+export default { Background, Text, Button, Inputs, List, Item };
