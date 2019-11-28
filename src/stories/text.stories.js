@@ -1,18 +1,26 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, object } from '@storybook/addon-knobs';
+import styled from 'styled-components';
 
 import { Header, Text } from '../components/index';
+
+const HeaderCenter = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
 
 storiesOf('Typography', module)
     .addDecorator(withKnobs)
     .addDecorator(story => {
         return (
             <>
-                <div className="column">
+                <HeaderCenter>
                     <Header>Typography</Header>
                     <Text.Small>Abel</Text.Small>
-                </div>
+                </HeaderCenter>
                 <div className="typography-container">
                     {story()}            
                 </div> 

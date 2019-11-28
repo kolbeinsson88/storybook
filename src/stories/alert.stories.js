@@ -8,7 +8,7 @@ import Text from '../components/blocks/typography/text';
 storiesOf('Alert', module)
     .add('Danger', () => {
         return (
-            <Alert type="danger" >
+            <Alert type="danger">
                 <Alert.primaryTitle align="center">Header title</Alert.primaryTitle>
                 <Alert.primaryContent>
                     <Text.Small>
