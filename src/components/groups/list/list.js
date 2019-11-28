@@ -13,13 +13,13 @@ const Li = styled.li`
   margin: 8px 0;
 `;
 
-const TitleWrapper = styled.h3`
+export const TitleWrapper = styled.h3`
   font-weight: bold;
   margin: 0;
   padding: 0;
 `;
 
-const ItemsWrapper = styled.div`
+export const ItemsWrapper = styled.div`
   font-weight: 400;
   margin: 8px 0 16px 24px;
   padding: 0;
