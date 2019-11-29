@@ -28,5 +28,8 @@ export const COLOR = {
     IVORY_DARK: '#cdcdcc1',
 
     STEEL_BLUE_LIGHT: '#63b8ff',
-    STEEL_BLUE_DARK: '#4f94cd'
+    STEEL_BLUE_DARK: '#4f94cd',
+
+    ALBANY_PAINT_BLUE_MOUNTAIN: '#4e6f8e'
+
 };
