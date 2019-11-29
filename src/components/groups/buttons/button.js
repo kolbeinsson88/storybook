@@ -72,8 +72,26 @@ const StyledMain = styled.button`
     ${Disabled}
 `;
 
-const Button = ({type, children, disabled, margin, onClick}) => {
-    const typeToLower = type.toLowerCase();
+const StyledButtonSearch = styled.button`
+    padding: 5px 25px;
+    border-radius: 4px;
+    border: none;
+    
+    font-size: 15px;
+    font-weight: 400px;
+    text-transform: 500px;
+
+    background-color: black;
+    border-color: black;
+    color: white;
+
+    margin: 0 ${props => props.margin};
+
+    ${Disabled}
+`;
+
+const Button = ({type = "main", children, disabled, margin, onClick}) => {
+    const typeToLower = type ? type.toLowerCase() : type;
     if (typeToLower === 'main') {
         return (
             <StyledMain 
@@ -89,13 +107,25 @@ const Button = ({type, children, disabled, margin, onClick}) => {
         return (
             <StyledButton 
                 disabled={disabled}
-                onClick={() => onClick()} 
+                onClick={() => onClick()}
                 margin={margin}
                 hover={COLOR.MEDIUM_SEA_GREEN} 
                 color={COLOR.GREEN_DARK}
             >
                 {children}
             </StyledButton>
+        );
+    }
+    if (typeToLower === 'search') {
+        return (
+            <StyledButtonSearch
+                disabled={disabled}
+                onClick={() => onClick()}
+                margin={margin}
+                color={COLOR.GREEN_DARK}
+            >
+                {children}
+            </StyledButtonSearch>
         );
     }
     if (typeToLower === 'danger') {
@@ -107,7 +137,7 @@ const Button = ({type, children, disabled, margin, onClick}) => {
                 hover={COLOR.FIREBRICK_LIGHT} 
                 color={COLOR.FIREBRICK_DARK}
             >
-            {children}
+                {children}
             </StyledButton>
         );
     }
@@ -120,7 +150,7 @@ const Button = ({type, children, disabled, margin, onClick}) => {
                 hover={COLOR.STEEL_BLUE_LIGHT} 
                 color={COLOR.STEEL_BLUE_DARK}
             >
-            {children}
+                {children}
             </StyledButton>
         );
     }
@@ -132,7 +162,7 @@ const Button = ({type, children, disabled, margin, onClick}) => {
             hover={COLOR.GRAY_MEDIUM} 
             color={COLOR.GRAY_DARK}
         >
-        {children}
+            {children}
         </StyledButton>
     );
 };

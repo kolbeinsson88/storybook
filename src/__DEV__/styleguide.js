@@ -1,7 +1,10 @@
 import React from 'react';
 
 import Background from '../components/blocks/backgrounds/background';
+
 import { Text, Header, Button } from '../components/index';
+
+
 
 const Styleguide = () => {
     return (

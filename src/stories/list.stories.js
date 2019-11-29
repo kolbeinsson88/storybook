@@ -20,12 +20,20 @@ const ListWrapper = styled.div`
   box-shadow: 1px 1px black;
 `;
 
+const ItemWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
 storiesOf('List')
     .addDecorator(withKnobs)
     .addDecorator(story => {
         return (
             <>
-                <Header>List Items</Header>
+                <ItemWrapper>
+                    <Header>List Items</Header>
+                </ItemWrapper>
                 <ListWrapper>
                     {story()}
                 </ListWrapper>
