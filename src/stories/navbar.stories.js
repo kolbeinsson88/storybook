@@ -1,10 +1,17 @@
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
 
-const Navbar = () => {
+import Navbar from '../components/interfaces/Navbar/Navbar';
 
-    return (
-        <div>nav</div>
-    )
-};
+const List = [
+    'item one',
+    'item one',
+    'item one'
+];
 
-export default Navbar;
+storiesOf('Navbar', module)
+    .addDecorator(withKnobs)
+    .add('Navbar', () => {
+        return <Navbar links={List} />;
+    });

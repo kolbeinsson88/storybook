@@ -1,6 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-
 const Body = css`
   body {
     font-family: 'Abel', sans-serif;
@@ -28,6 +27,8 @@ const Body = css`
     sub {
       margin-right: 8px;
     }
+
+
   }
 `;
 
