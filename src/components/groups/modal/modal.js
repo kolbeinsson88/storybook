@@ -30,12 +30,35 @@ const BodyContainer = styled.div`
     color: grey;
 `;
 
-const Modal = ({children}) => <BodyContainer>{children}</BodyContainer>;
+const ModalButton = styled.button`
+    background-color: #080707;
+    color: white;
 
+    border-radius: 4px;
+    padding: 8px 32px;
+    margin: 12px 0;
+    font-size: 15px;
+    font-weight: 600;
+
+    border: 1px solid ${COLOR.FIREBRICK_LIGHT};
+    cursor: pointer;
+
+    &:hover {
+        border-radius: 1px solid ${COLOR.FIREBRICK_MEDIUM}; 
+        background-color: #120509;
+    }
+    
+    &:focus { 
+        border-radius: 1px solid ${COLOR.FIREBRICK_DARK}; 
+    }
+`;
+
+
+const Modal = ({children}) => <BodyContainer>{children}</BodyContainer>;
 Modal.Title = ({children}) => <StylingHeader>{children}</StylingHeader>;
 Modal.Body = ({children}) => <StylingBody>{children}</StylingBody>;
 Modal.Footer = ({children}) => <StylingFooter>{children}</StylingFooter>;
-Modal.Button = ({onClick, children}) => <button onClick={() => onClick()} >{children}</button>;
+Modal.Button = ({onClick, children}) => <ModalButton onClick={() => onClick()}>{children}</ModalButton>;
 
 
 export default Modal;
