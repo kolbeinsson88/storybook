@@ -1,13 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Modal from '../components/groups/modal/modal';
 import ModalContainer from '../components/groups/modal/ModalContainer';
+
+const StyledButton = styled.button`
+    color: white;
+    background-color: black;
+    width: 162px;
+    padding: 8px;
+    border: none;
+`;
 
 class Styleguide extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            modalOpen: true,
+            modalOpen: false,
          }
     };
 
@@ -39,9 +48,9 @@ class Styleguide extends React.Component {
                             Perspiciatis voluptatem autem. Ut sequi facere velit. Sed veritatis cumque. Perspiciatis ipsa voluptas possimus praesentium consectetur.
                         </Modal.Body>
                         <Modal.Footer>Adding footer</Modal.Footer>
-                        <button onClick={() => this.setState({modalOpen: false})}>Close</button>
+                        <Modal.Button onClick={() => this.setState({modalOpen: false})}>Close</Modal.Button>
                     </ModalContainer>
-                    <button onClick={() => this.setState({modalOpen: !this.modelOpen})}>Open</button>
+                    <StyledButton onClick={() => this.setState({modalOpen: !this.modelOpen})} >Open Modal</StyledButton>
                 </div>
             </>
         );
