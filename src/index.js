@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../src/styles/boilerplate.css';
 
 import App from './App';
 
