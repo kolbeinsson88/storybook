@@ -27,8 +27,6 @@ const Body = css`
     sub {
       margin-right: 8px;
     }
-
-
   }
 `;
 
