@@ -12,6 +12,7 @@ const StyledModal = styled.div`
     z-index: 999;
     border-radius: 8px;
     box-shadow: 2px 2px #999395;
+    color: grey;
 `;
 
 class ModalContainer extends React.Component {

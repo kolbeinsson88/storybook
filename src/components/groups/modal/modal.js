@@ -32,7 +32,7 @@ const BodyContainer = styled.div`
 
 const ModalButton = styled.button`
     background-color: #080707;
-    color: white;
+    color: grey;
 
     border-radius: 4px;
     padding: 8px 32px;
