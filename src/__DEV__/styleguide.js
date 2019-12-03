@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Modal from '../components/groups/modal/modal';
 import ModalContainer from '../components/groups/modal/ModalContainer';
 import Carousel from '../components/interfaces/carousel/Carousel';
+import Toaster from '../components/interfaces/toaster/toaster';
 
 const Container = styled.div`
     display: flex;
@@ -38,14 +39,14 @@ class Styleguide extends React.Component {
         this.setState({ modalOpen: false });
     }
 
-    
-
     render() {
         const { modalOpen } = this.state;
 
         return (
             <>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '250px' }}>
+                    <Toaster active={true}>Message</Toaster>
+
                     <Carousel data={data} />
                     <Container>
                         <ModalContainer hasOpened={modalOpen}>

@@ -6,5 +6,6 @@ import List from './list.stories';
 import Alert from './alert.stories';
 import Card from './card.stories';
 import Modal from './modal.stories';
+import Column from './column.stories';
 
-export default { Background, Text, Button, Inputs, List, Alert, Card, Modal };
+export default { Background, Text, Button, Inputs, List, Alert, Card, Modal, Column };
