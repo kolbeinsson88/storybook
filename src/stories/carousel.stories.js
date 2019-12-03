@@ -5,6 +5,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 
 import Carousel from '../components/interfaces/carousel/Carousel';
+import Header from '../components/blocks/typography/header';
 
 const Wrapper = styled.div`
     display: flex;
@@ -28,10 +29,9 @@ storiesOf('Carousel', module)
     .add('Carousel', () => {
         return (
             <Wrapper>
-                <h1>Carousel</h1>
+                <Header.h1>Carousel</Header.h1>
                 <Carousel data={data} /> 
             </Wrapper>
         );
     });
-
-
+    
