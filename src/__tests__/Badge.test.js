@@ -28,3 +28,4 @@ it('It has text content and renders', () => {
 
     expect(container.querySelector("div").textContent).toStrictEqual("Hi");
 });
+

@@ -44,13 +44,75 @@ const H6 = styled.h6`
   margin: ${props => props.margin|0}px;
 `;
 
-const Header = ({children, margin, weight}) => <Base margin={margin} weight={weight}>{children}</Base>;
-Header.h1 = ({children, margin, weight}) => <H1 margin={margin} weight={weight}>{children}</H1>;
-Header.h2 = ({children, margin, weight}) => <H2 margin={margin} weight={weight}>{children}</H2>;
-Header.h3 = ({children, margin, weight}) => <H3 margin={margin} weight={weight}>{children}</H3>;
-Header.h4 = ({children, margin, weight}) => <H4 margin={margin} weight={weight}>{children}</H4>;
-Header.h5 = ({children, margin, weight}) => <H5 margin={margin} weight={weight}>{children}</H5>;
-Header.h6 = ({children, margin, weight}) => <H6 margin={margin} weight={weight}>{children}</H6>;
+const Header = ({
+  children, 
+  margin, 
+  weight
+}) => {
+  return (
+    <Base margin={margin} weight={weight}>{children}</Base>
+  );
+};
+
+Header.h1 = ({
+  children, 
+  margin, 
+  weight
+}) => {
+  return (
+    <H1 margin={margin} weight={weight}>{children}</H1>
+  );
+}
+
+Header.h2 = ({
+  children, 
+  margin, 
+  weight
+}) => {
+  return (
+    <H2 margin={margin} weight={weight}>{children}</H2>
+  );
+}
+
+Header.h3 = ({
+  children,
+  margin, 
+  weight
+}) => {
+  return (
+    <H3 margin={margin} weight={weight}>{children}</H3>
+  );
+}
+
+Header.h4 = ({
+  children, 
+  margin, 
+  weight
+}) => {
+  return (
+    <H4 margin={margin} weight={weight}>{children}</H4>
+  );
+}
+
+Header.h5 = ({
+  children, 
+  margin, 
+  weight
+}) => {
+  return (
+    <H5 margin={margin} weight={weight}>{children}</H5>
+  );
+}
+
+Header.h6 = ({
+  children, 
+  margin, 
+  weight
+}) => {
+  return (
+    <H6 margin={margin} weight={weight}>{children}</H6>
+  );
+}
 
 Header.propTypes = {
   children: PropTypes.any,
