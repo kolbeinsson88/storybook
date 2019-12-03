@@ -30,7 +30,7 @@ storiesOf('Carousel', module)
         return (
             <Wrapper>
                 <Header.h1>Carousel</Header.h1>
-                <Carousel data={data} /> 
+                <Carousel data={data} />
             </Wrapper>
         );
     });

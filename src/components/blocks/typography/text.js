@@ -25,9 +25,41 @@ const SubText = styled.sub`
   font-weight: 300px;
 `;
 
-const Text = ({color, children, weight}) => <MainText weight={weight} color={color}>{children}</MainText>;
-Text.Large = ({color, children, weight}) => <LargeText weight={weight} color={color}>{children}</LargeText>;
-Text.Small = ({color, children, weight}) => <SmallText weight={weight} color={color}>{children}</SmallText>;
-Text.Sub = ({color, children}) => <SubText color={color}>{children}</SubText>;
+const MediumText  = styled.p`
+  color: ${props => props.color};
+  font-size: 18px;
+  font-weight: 300px;
+`;
+
+
+const Text = ({color, children, weight}) => {
+  return (
+    <MainText weight={weight} color={color}>{children}</MainText>
+  );
+};
+
+Text.Large = ({color, children, weight}) => {
+  return (
+    <LargeText weight={weight} color={color}>{children}</LargeText>
+  );
+};
+
+Text.Small = ({color, children, weight}) => {
+  return (
+    <SmallText weight={weight} color={color}>{children}</SmallText>
+  );
+};
+
+Text.Sub = ({color, children}) => {
+  return (
+    <SubText color={color}>{children}</SubText>
+  );
+};
+
+Text.Medium = ({color, children}) => {
+  return (
+    <MediumText color={color}>{children}</MediumText>
+  );
+};
 
 export default Text;
