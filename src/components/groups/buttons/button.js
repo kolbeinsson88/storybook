@@ -91,8 +91,8 @@ const StyledButtonSearch = styled.button`
 `;
 
 const Button = ({type = "main", children, disabled, margin, onClick}) => {
-    const typeToLower = type ? type.toLowerCase() : type;
-    if (typeToLower === 'main') {
+
+    if (type === 'main') {
         return (
             <StyledMain 
                 disabled={disabled}
@@ -103,7 +103,7 @@ const Button = ({type = "main", children, disabled, margin, onClick}) => {
             </StyledMain>
         );
     }
-    if (typeToLower === 'success') {
+    if (type === 'success') {
         return (
             <StyledButton 
                 disabled={disabled}
@@ -116,7 +116,7 @@ const Button = ({type = "main", children, disabled, margin, onClick}) => {
             </StyledButton>
         );
     }
-    if (typeToLower === 'search') {
+    if (type === 'search') {
         return (
             <StyledButtonSearch
                 disabled={disabled}
@@ -128,7 +128,7 @@ const Button = ({type = "main", children, disabled, margin, onClick}) => {
             </StyledButtonSearch>
         );
     }
-    if (typeToLower === 'danger') {
+    if (type === 'danger') {
         return (
             <StyledButton 
                 onClick={() => onClick()} 
@@ -141,7 +141,7 @@ const Button = ({type = "main", children, disabled, margin, onClick}) => {
             </StyledButton>
         );
     }
-    if (typeToLower === 'info') {
+    if (type === 'info') {
         return (
             <StyledButton 
                 onClick={() => onClick()} 

@@ -43,7 +43,7 @@ storiesOf('List')
     .add('List', () => {
         return (
             <List title={object('title', 'Not good drinks: ')}>
-                <List.li>(Blue mountain.)</List.li>
+                <List.li>(Blue Mountain.)</List.li>
                 <List.li>Mountain dew.</List.li>
                 <List.li>Jenkyns Ice T.</List.li>
             </List>
