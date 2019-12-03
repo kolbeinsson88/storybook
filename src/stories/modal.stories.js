@@ -18,7 +18,7 @@ storiesOf('Modal', module)
     .addDecorator(stories => {
         return (
             <StyledComponent>
-                 <h1>Modal</h1>
+                <h1>Modal</h1>
                 {stories()}
             </StyledComponent>
         );

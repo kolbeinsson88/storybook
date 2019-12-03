@@ -12,6 +12,8 @@ const InputWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     width: auto;
+    margin: 10px 0;
+
     input {
         width: 400px;
         margin-top: 16px;
@@ -24,7 +26,7 @@ storiesOf('Input', module)
         return (
             <InputWrapper>
                 <Header.h1>Input</Header.h1>
-                <Input placeholder={object('placeholder', 'No typos....')} />;
+                <Input placeholder={object('placeholder', 'No typos....')} />
             </InputWrapper>
         )
     });
