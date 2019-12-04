@@ -17,8 +17,6 @@ class Styleguide extends React.Component {
     // <Toaster active={true}>Message</Toaster>
 
     render() {
-        const { modalOpen } = this.state;
-
         return (
             <AsideContent aside="200px">Content</AsideContent>
         );
