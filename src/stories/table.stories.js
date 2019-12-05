@@ -13,7 +13,7 @@ const StyledTable = styled.div`
     margin: 0 200px;
 `;
 
-storiesOf('A world class table', module)
+storiesOf('Table', module)
     .addDecorator(withKnobs)
     .add('Table', () => {
         return (
