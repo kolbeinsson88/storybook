@@ -1,6 +1,10 @@
 import React from 'react';
 
+
 import AsideContent from '../components/templates/asideContent/asideContent';
+import ProgressBar from '../components/interfaces/progress/progressBar';
+
+
 
 class Styleguide extends React.Component {
     constructor(props) {
@@ -14,13 +18,20 @@ class Styleguide extends React.Component {
         this.setState({ modalOpen: false });
     }
 
-    // <Toaster active={true}>Message</Toaster>
-
     render() {
-        const { modalOpen } = this.state;
-
         return (
-            <AsideContent aside="200px">Content</AsideContent>
+            <>
+                <AsideContent 
+                    aside="200px"
+                >
+                    Content
+                </AsideContent>            
+                <ProgressBar
+                    bg="green"
+                    progress={80}
+                />
+            </>
+
         );
     }
 }

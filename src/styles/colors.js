@@ -31,5 +31,4 @@ export const COLOR = {
     STEEL_BLUE_DARK: '#4f94cd',
 
     ALBANY_PAINT_BLUE_MOUNTAIN: '#4e6f8e'
-
 };

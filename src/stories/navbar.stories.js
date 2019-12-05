@@ -5,9 +5,9 @@ import { withKnobs } from '@storybook/addon-knobs';
 import Navbar from '../components/interfaces/Navbar/Navbar';
 
 const List = [
-    'item one',
-    'item one',
-    'item one'
+    'Home',
+    'Orders',
+    'Offers'
 ];
 
 storiesOf('Navbar', module)

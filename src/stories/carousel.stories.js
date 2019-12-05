@@ -30,7 +30,7 @@ storiesOf('Carousel', module)
         return (
             <Wrapper>
                 <Header.h1>Carousel</Header.h1>
-                <Carousel data={data} />
+                <Carousel height={400} width={600} img={data} />
             </Wrapper>
         );
     });

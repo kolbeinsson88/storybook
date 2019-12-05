@@ -22,8 +22,9 @@ const ListView = styled.ul`
     flex-direction: row;
     list-style: none;
     padding: 16px;
-    background-color: ${COLOR.FIREBRICK_DARK};
+    background-color: ${COLOR.GREEN_DARK};
     justify-content: space-between;
+    font-weight: 400;
     
     li {
         margin-right: 4px;
