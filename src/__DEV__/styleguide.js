@@ -1,24 +1,39 @@
 import React from 'react';
 
-import Background from '../components/blocks/backgrounds/background';
-import { Text, Header, Button } from '../components/index';
 
-const Styleguide = () => {
-    return (
-        <>
-            <Background align="center">
-                <Header>Header Primary</Header>
-                <Header.h1 margin={20}>Header secondary</Header.h1>
-                <Text weight="bold" color="hotpink">Basic text example in pink</Text>
-                <Text.Large color="green">Large text example in green</Text.Large>
-            </Background>
-            <Background align="center">
-                <Header margin={10}>Button groups</Header>
-                <Button margin={10} type="success">Success</Button>
-                <Button margin={10} type="danger">Danger</Button>
-            </Background>
-        </>
-    );
-};
+import AsideContent from '../components/templates/asideContent/asideContent';
+import ProgressBar from '../components/interfaces/progress/progressBar';
+
+
+
+class Styleguide extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            modalOpen: false,
+         }
+    };
+
+    toggleModal() {
+        this.setState({ modalOpen: false });
+    }
+
+    render() {
+        return (
+            <>
+                <AsideContent 
+                    aside="200px"
+                >
+                    Content
+                </AsideContent>            
+                <ProgressBar
+                    bg="green"
+                    progress={80}
+                />
+            </>
+
+        );
+    }
+}
 
 export default Styleguide;

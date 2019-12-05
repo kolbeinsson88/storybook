@@ -20,12 +20,20 @@ const ListWrapper = styled.div`
   box-shadow: 1px 1px black;
 `;
 
+const ItemWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
 storiesOf('List')
     .addDecorator(withKnobs)
     .addDecorator(story => {
         return (
             <>
-                <Header>List Items</Header>
+                <ItemWrapper>
+                    <Header>List Items</Header>
+                </ItemWrapper>
                 <ListWrapper>
                     {story()}
                 </ListWrapper>
@@ -35,9 +43,9 @@ storiesOf('List')
     .add('List', () => {
         return (
             <List title={object('title', 'Not good drinks: ')}>
-                <List.li>Blue mountain.</List.li>
-                <List.li>Mountain dew.</List.li>
-                <List.li>Jenkyns Ice T.</List.li>
+                <List.li>(Blue mountain.)</List.li>
+                <List.li>(Mountain dew.)</List.li>
+                <List.li>(Jenkyns Ice T.)</List.li>
             </List>
         )
     })

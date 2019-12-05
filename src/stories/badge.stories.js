@@ -16,14 +16,20 @@ const ButtonWrapper = styled.div`
     margin: 8px 32px;
 `;
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 storiesOf('Badge', module)
     .addDecorator(withKnobs)
     .addDecorator(story => {
         return (
-            <>
+            <Container>
                 <Header.h1>Badges</Header.h1>
                 {story()}
-            </>
+            </Container>
         )
     })
     .add('Badges', () => {

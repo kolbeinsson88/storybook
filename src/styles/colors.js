@@ -4,10 +4,10 @@ export const COLOR = {
     ANTIQUE_WHITE_DARK: '#eedfcc',
     ANTIQUE_WHITE_VERY_DARK: '#cdc0b0',
 
-    AZURE_LIGHT: '#f0ffff',
-    AZURE_MEDIUM: '#e0eeee',
-    AZURE_DARK: '#c1cdcd',
-    AZURE_VERY_DARK: '#838b8b',
+    AZURE_LIGHT: '#F0FFFF',
+    AZURE_MEDIUM: '#E0EEEE',
+    AZURE_DARK: '#C1CDCD',
+    AZURE_VERY_DARK: '#838B8B',
 
     FIREBRICK_LIGHT: '#b22222',
     FIREBRICK_MEDIUM: '#ff3030',
@@ -28,5 +28,7 @@ export const COLOR = {
     IVORY_DARK: '#cdcdcc1',
 
     STEEL_BLUE_LIGHT: '#63b8ff',
-    STEEL_BLUE_DARK: '#4f94cd'
+    STEEL_BLUE_DARK: '#4f94cd',
+
+    ALBANY_PAINT_BLUE_MOUNTAIN: '#4e6f8e'
 };

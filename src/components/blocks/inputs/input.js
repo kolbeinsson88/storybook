@@ -10,6 +10,7 @@ const InputStyled = styled.input`
   border: 1px solid ${COLOR.STEEL_BLUE_LIGHT};
   border-radius: 8px;
   color: ${COLOR.IVORY_DARK};
+  border-bottom: black;
 `;
 
 const Input = ({ placeholder }) => <InputStyled placeholder={placeholder} />;

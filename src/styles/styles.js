@@ -1,6 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-
 const Body = css`
   body {
     font-family: 'Abel', sans-serif;
@@ -25,16 +24,6 @@ const Body = css`
       align-items: center;
     }
 
-    .column {
-      display: flex;
-      flex-direction: column;
-      p {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-    }
-
     sub {
       margin-right: 8px;
     }
@@ -44,8 +33,7 @@ const Body = css`
 
 const Headers = css`
     h1, h2, h3, h4, h5, h6 {
-      display: flex;
-      justify-content: center;
+
     }
 `;
 
