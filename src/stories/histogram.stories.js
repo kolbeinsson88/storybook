@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
+import { object, withKnobs } from '@storybook/addon-knobs';
 
 import Histogram from '../components/interfaces/histogram/histogram';
 import Bar from '../components/interfaces/histogram/bar';
@@ -15,10 +16,11 @@ const Labels = [
     '200',
     '300',
     '400',
-    '500'
+    '500',
 ];
 
 storiesOf('Histogram', module)
+    .addDecorator(withKnobs)
     .addDecorator(story => {
         return (
             <Container>{story()}</Container>
@@ -28,14 +30,14 @@ storiesOf('Histogram', module)
         return (
             <Histogram
                 title="Cars sold"
-                numBars={5}
+                numBars={object('numBars', 5)}
                 labels={Labels}
             >
-                <Bar distribution={100} label="Diablo" />
-                <Bar distribution={380} label="Toyota Yaris" />
-                <Bar distribution={480} label="Mercedes Benz 300" />
-                <Bar distribution={240} label="Alfa Romeo" />
-                <Bar distribution={80} label="Ferrari" />
+                <Bar distribution={object('distributionDiablo', 100)} label="Diablo" />
+                <Bar distribution={object('distributionYaris', 220)} label="Toyota Yaris" />
+                <Bar distribution={object('distributionRomeo', 420)} label="Alfa Romeo" />
+                <Bar distribution={object('distributionBenz', 200)} label="Mercedes Benz 300" />
+                <Bar distribution={object('distributionFerrari', 80)} label="Ferrari" />
             </Histogram>
         )
     });

@@ -52,7 +52,6 @@ const Histogram = ({title, labels, numBars, children}) => {
                 </HistogramStyled>
             </Container>
         </HistogramContainer>
-
     );
 }
 
