@@ -9,7 +9,7 @@ const Bar = styled.div`
     color: grey;
     text-align: center;
 
-    span {
+    .label {
         position: relative;
         top: 100%;
     }
@@ -18,7 +18,7 @@ const Bar = styled.div`
 const HistogramBar = ({distribution, label}) => {
     return (
         <Bar height={distribution}>
-            <span>{label}</span>
+            <span className="label">{label}</span>
         </Bar>
     );
 }

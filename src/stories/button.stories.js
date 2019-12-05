@@ -6,7 +6,6 @@ import { withKnobs, object } from '@storybook/addon-knobs';
 import { Button } from '../components/index';
 import Header from '../components/blocks/typography/header';
 
-
 storiesOf('Buttons', module)
     .addDecorator(withKnobs)
     .addDecorator(story => {
@@ -29,8 +28,3 @@ storiesOf('Buttons', module)
     .add('Disabled', () => {
         return <Button disabled onClick={action('button-click')} type={object('type', 'success')}>Success Button</Button>;
     })
-    .add('Sizes', () => {
-        return <Button onClick={action('button-click')} type={object('type', 'danger')}>Danger Button</Button>;
-    });
-
-    

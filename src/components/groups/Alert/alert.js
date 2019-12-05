@@ -6,7 +6,6 @@ import { COLOR } from '../../../styles/colors';
 const AlertStyled = styled.div`
     padding: 24px;
     margin: 16px;
-    border-radius: 8px;
 
     border: 1px solid green;
     background-color: ${props => props.bgColor};        
