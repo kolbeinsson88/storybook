@@ -13,4 +13,4 @@ Creating a few custom styles using storybook
 `yarn add --dev @storybook/addon-knobs`
 
 # Inventory of components
-Identify most common. If there is a need for that component more than three times then inventory that component and add it to your design system.
+Identify most commonly used components in all your projects, then add it to your design system.
